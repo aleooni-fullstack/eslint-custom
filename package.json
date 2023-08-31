@@ -3,10 +3,9 @@
   "description": "ESLint configuration used by aleodoni.",
   "version": "1.0.0",
   "private": false,
-  "main": "index.js",
   "license": "MIT",
   "repository": {
-    "url": "aleodoni-fullstack/eslint-custom"
+    "url": "git+https://github.com/aleodoni-fullstack/eslint-custom.git"
   },
   "peerDependencies": {
     "eslint": "^8.0.0",
@@ -31,5 +30,14 @@
     "eslint-plugin-react-hooks": "^4.5.0",
     "prettier": "^3.0.0",
     "eslint-plugin-prettier": "5.0.0-alpha.2"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/aleodoni-fullstack/eslint-custom/issues"
+  },
+  "homepage": "https://github.com/aleodoni-fullstack/eslint-custom#readme",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexandre Odoni"
 }
