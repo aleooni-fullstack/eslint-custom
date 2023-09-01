@@ -24,6 +24,10 @@ module.exports = {
         endOfLine: 'auto',
       },
     ],
+    'no-useless-constructor': 'off',
+    'no-prototype-builtins': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/ban-types': 'off',
   },
   settings: {
     'import/parsers': {
