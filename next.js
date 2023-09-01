@@ -28,7 +28,7 @@ module.exports = {
       'singleQuote': true,
       'trailingComma': 'all',
       'arrowParens': 'always',
-      'semi': false,
+      'semi': true,
       'endOfLine': 'auto',
     }],
     'jsx-a11y/alt-text': [
