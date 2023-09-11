@@ -1,6 +1,6 @@
 {
   "name": "@aleodoni-fullstack/eslint-config",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "private": false,
   "description": "ESLint configuration used by aleodoni.",
   "main": "index.js",
@@ -18,8 +18,7 @@
       "optional": true
     }
   },
-  "devDependencies": {
-    "@next/eslint-plugin-next": "^13.4.19",
+  "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.25.0",
     "@typescript-eslint/parser": "^5.25.0",
     "eslint": "^8.0.0",
@@ -34,5 +33,8 @@
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-react-hooks": "^4.5.0",
     "prettier": "^3.0.0"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^13.4.19"
   }
 }
