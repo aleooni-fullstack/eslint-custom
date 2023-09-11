@@ -54,8 +54,7 @@ module.exports = {
     'jsx-a11y/role-has-required-aria-props': 'warn',
     'jsx-a11y/role-supports-aria-props': 'warn',
     'react/no-unknown-property': 'error',
-  },
-  rules: {
-    "import/no-default-export": "off",
+    '@next/next/no-html-link-for-pages': 'off',
+    'import/no-default-export': 'off',
   },
 }
