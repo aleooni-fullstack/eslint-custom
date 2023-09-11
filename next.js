@@ -10,6 +10,7 @@ module.exports = {
     'plugin:prettier/recommended',
     'turbo',
     'prettier',
+    'next'
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
