@@ -1,10 +1,14 @@
+const { resolve } = require("node:path");
+
+const project = resolve(process.cwd(), "tsconfig.json");
+
 module.exports = {
   env: {
     es2021: true,
     node: true,
     jest: true
   },
-  extends: ['standard', 'plugin:@typescript-eslint/recommended', 'plugin:prettier/recommended'],
+  extends: ['standard', 'plugin:@typescript-eslint/recommended', 'plugin:prettier/recommended'].map(require.resolve),
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',

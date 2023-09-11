@@ -1,3 +1,7 @@
+const { resolve } = require("node:path");
+
+const project = resolve(process.cwd(), "tsconfig.json");
+
 module.exports = {
   env: {
     browser: true,
@@ -5,22 +9,28 @@ module.exports = {
     jest: true,
   },
   extends: [
-    'standard',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended',
-  ],
-  parser: '@typescript-eslint/parser',
+    "@vercel/style-guide/eslint/node",
+    "@vercel/style-guide/eslint/typescript",
+    "@vercel/style-guide/eslint/browser",
+    "@vercel/style-guide/eslint/react",
+    "@vercel/style-guide/eslint/next",
+    "eslint-config-turbo",
+  ].map(require.resolve),
   parserOptions: {
-    ecmaFeatures: {
-      jsx: true
-    },
-    ecmaVersion: 'latest',
-    sourceType: 'module'
+    project,
   },
-  plugins: [
-    'jsx-a11y',
-    '@typescript-eslint'
-  ],
+  globals: {
+    React: true,
+    JSX: true,
+  },
+  settings: {
+    "import/resolver": {
+      typescript: {
+        project,
+      },
+    },
+  },
+  ignorePatterns: ["node_modules/", "dist/"],
   rules: {
     'prettier/prettier': ["error", {
       'printWidth': 80,
@@ -45,12 +55,7 @@ module.exports = {
     'jsx-a11y/role-supports-aria-props': 'warn',
     'react/no-unknown-property': 'error',
   },
-  settings: {
-    react: {
-      version: 'detect',
-    },
-    'import/parsers': {
-      [require.resolve('@typescript-eslint/parser')]: ['.ts', '.tsx', '.d.ts'],
-    },
-  }
+  rules: {
+    "import/no-default-export": "off",
+  },
 }
