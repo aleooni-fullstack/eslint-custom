@@ -1,6 +1,6 @@
 {
   "name": "@aleodoni-fullstack/eslint-config",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "private": false,
   "description": "ESLint configuration used by aleodoni.",
   "main": "index.js",
@@ -31,6 +31,8 @@
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-react-hooks": "^4.5.0",
     "prettier": "^3.0.0",
-    "eslint-plugin-prettier": "5.0.0-alpha.2"
+    "eslint-plugin-prettier": "5.0.0-alpha.2",
+    "@vercel/style-guide": "^5.0.0",
+    "eslint-config-turbo": "^1.10.12"
   }
 }
