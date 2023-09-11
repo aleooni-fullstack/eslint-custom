@@ -1,6 +1,6 @@
 {
   "name": "@aleodoni-fullstack/eslint-config",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "private": false,
   "description": "ESLint configuration used by aleodoni.",
   "main": "index.js",
